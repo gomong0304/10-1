@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 페이지</title>
+<link rel="stylesheet" href="../Main/style.css">
+<link rel="stylesheet" href="../Login/Loginstyle.css">
+</head>
+<body>
+	<!-- header  -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img src="../image/logo.jpg">
+			</div>
+			<ul class="sidemenu">
+				<li><a href="../Main/index.html">HOME</a></li>
+				<li><a href="#">SITEMAP</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- section2  -->
+	<section id="section2">
+		<div class="container">
+			<div class="loginBox">
+				<div>
+					<div class="box">
+						<div class="logo">
+							<h1>로그인</h1>
+						</div>
+						<form>
+							<input type="text" name="uid" id="email" placeholder="아이디">
+  							<input type="password" name="pw" id="password" placeholder="비밀번호">
+  							<button type="button" id="loginBtn">로그인</button>
+						</form>
+					</div>
+					<div class="box">
+						<div class="social logo">
+							<h1>소셜 로그인하기</h1>
+							<button class="insta">인스타 ID로 로그인</button>
+							<button class="facebook">페이스북 ID로 로그인</button>
+							<button class="naver">네이버 ID로 로그인</button>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="alert">
+						<h1>도움이 필요하신가요?</h1>
+						<p>
+							<button>아이디 찾기</button>
+							<button>비밀번호 찾기</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="clear"></div>
+
+	<!-- footer -->
+	<footer>
+		<div class="top">
+			<div class="container">
+				<span>다운로드</span> <span>개인 정보 처리 방침</span> <span>저작권 지침 및 신고</span>
+				<span>이메일 무단 수집 거부</span>
+			</div>
+		</div>
+		<div class="container">
+			<strong> Home : Location Log : Tag Log : Media Log :
+				GuestBook : Admin : New Post </strong>
+			<div class="copyright">COPYRIGHT &copy; 투바투공식홈페이지's BLOG IS
+				POWERED BY NAVER / DESIGNED BY BIGHITS</div>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById("loginBtn").addEventListener("click",function() {
+			const email = document.getElementById("email").value.trim();
+			const password = document.getElementById("password").value;
+			const storedUser = JSON.parse(localStorage.getItem("user"));
+
+			if (!storedUser) {
+				alert("저장된 회원정보가 없습니다. 회원가입 먼저 해주세요.");
+				return;
+			}
+
+			if (email === storedUser.email && password === storedUser.password) {
+				alert("로그인 성공!");
+				// 로그인 성공 후 이동
+				window.location.href = "../Main/index.html";
+				localStorage.setItem("isLoggedIn", "true");
+			} else {
+				alert("이메일 또는 비밀번호가 일치하지 않습니다.");
+				
+			}
+			});
+		
+	</script>
+
+</body>
+</html>

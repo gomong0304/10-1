@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문서 객체 모델(DOM)연습</title>
+	
+	<!-- ex37-->
+	<script type="text/javascript">
+		function process1() {
+			var ob=document.getElementById("txt").value;
+			document.getElementById("view1").innerText=ob;
+		}
+		function process2() {
+			var ob=document.getElementById("txt").value;
+			document.getElementById("view2").innerHTML=ob;
+		}
+	</script>
+	
+	<body>
+		<input type="text" id="txt" size="50" name="text">
+		<input type="button" value="출력1" onclick="process1()">
+		<input type="button" value="출력2" onclick="process2()">
+		<br><br><br>
+		<div id="view1"></div>
+		<div id="view2"></div>
+	</body>
+	<hr>
+	
+	
+	<!-- ex38-->
+	<script type="text/javascript">
+		function choice() {
+			var size=document.getElementsByName("check").length;
+			var text="내가 좋아하는 과일은 ";
+			for(var i=0; i<size; i++){
+				if(document.getElementsByName("check")[i].checked==true){
+					text+=(document.getElementsByName("check")[i].value);
+					text+="&nbsp;&nbsp;"
+				}
+			}
+			text+="입니다";
+			document.getElementById("demo").innerHTML=text;
+		}
+	</script>
+	
+	<body>
+		좋아하는 과일을 고르시오
+		<input type='button' onclick='choice()'value='선택'><br>
+		<input type='checkbox' name='check' value='orange'>orange<br>
+		<input type='checkbox' name='check' value='apple'>apple<br>
+		<input type='checkbox' name='check' value='banana'>banana<br>
+		<input type='checkbox' name='check' value='melon'>melon<br>
+		<div id="demo"></div>
+	</body>
+	<hr>	
+	
+	
+	<!-- ex39-->
+	<script type="text/javascript">
+		function choice() {
+			var x=document.getElementsByTagName("li");
+			var text="";
+			for(i=0; i<x.length; i++){
+				text += x[i].innerHTML;
+				text += "&nbsp;&nbsp;"
+			}
+			document.getElementById("demo1").innerHTML=text;
+		}
+	</script>
+	
+	<body>
+		<button onclick="choice()">클릭하시오</button><br>
+		<ul>
+			<li>아메리카노</li>
+			<li>카페라떼</li>
+			<li>콜드블루</li>
+		</ul>
+		<div id="demo1"></div>
+	</body>
+	<hr>
+	
+	
+	<!-- ex40-->
+	<body>
+	<strong>머리말</strong><p id="me"><span>가운데</span><a href="">링크</a>
+	<img src="image/cat.png"/></p><button>꼬리말</button>
+	<hr>
+	
+	<script type="text/javascript">
+		var me=document.getElementById("me");
+		document.write("topNode: "+ me.ownerDocument.nodeName + "<br>");
+		document.write("firstChild: "+ me.firstChild.nodeName + "<br>");
+		document.write("lastChild: "+ me.lastChild.nodeName + "<br>");
+		document.write("parentNode: "+ me.parentNode.nodeName + "<br>");
+		document.write("previousSibling: "+ me.previousSibling.nodeName + "<br>");
+		document.write("nextSibling: "+ me.nextSibling.nodeName + "<br>");
+	</script>
+	</body>
+	<hr>
+	
+	
+	<!-- ex41-->
+	<body>
+	<ul id="tea">
+		<li>아메리카노</li>
+		<li>카페라떼</li>
+		<li>콜드브루</li>
+	</ul>
+	
+	<script type="text/javascript">
+		var tea=document.getElementById("tea");
+		var childs = tea.childNodes;
+		for(var i=0; i<childs.length; i++){
+			if(childs[i].nodeName=="LI"){
+				document.write(i+"번째 데이터= "+childs[i].firstChild.nodeValue+"<br>");
+			}
+		}
+	</script>
+	</body>
+	<hr>
+	
+	
+	<!-- p216~219는 안함-->
+	
+	
+	<!-- ex45-->
+	<script type="text/javascript">
+		function init() {
+			var emp={"name":"민들레",
+					"age":"25",
+					"tel":"1111-1111",
+					"address":"서울"};
+			var msg="";
+			msg +="이름:" +emp.name+"<br>"
+				+"나이:" +emp.age+"<br>"
+				+"전화:" +emp['tel']+"<br>"
+				+"주소:" +emp['address']+"<br>"
+				document.getElementById("result").innerHTML=msg;
+		}
+	</script>
+	
+	<body onload="init()">
+		<h2>JSON표기법</h2>
+		<div id="result"></div>
+	</body>
+	<hr>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</head>
+</html>

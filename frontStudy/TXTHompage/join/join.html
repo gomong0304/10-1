@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 페이지</title>
+<link rel="stylesheet" href="../join/gptstyle.css">
+</head>
+
+<body>
+	<!-- header  -->
+	
+	<header>
+		<div class="container">
+			<ul class="sidemenu">
+				<li><a href="../Main/index.html">HOME</a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<!-- join -->
+	<div class="bodytext_area box_inner">
+		<form action="#" class="appForm">
+			<fieldset>
+				<legend>회원가입</legend>
+				<p class="info_pilsoo pilsoo_item">필수입력</p>
+				<ul class="app_list">
+					<li class="clear">
+					<label for="email_lbl" class="tit_lbl pilsoo_item">이메일</label>
+						<div class="app_content email_area">
+							<input type="text" class="w160" id="email_lbl" title="이메일 주소">
+								<span class="ico_space">@</span> 
+								<input type="text" class="w160" title="이메일 제공업체 입력">
+						<div class="select_common">
+							<select title="이메일 제공업체 목록">
+								<option value="">직접입력</option>
+								<option value="">naver.com</option>
+								<option value="">hanmail.net</option>
+							</select>
+						</div>
+						</div>
+					</li>
+					<li class="clear">
+					<label for="name_lbl" class="tit_lbl pilsoo_item">작성자명</label>
+						<div class="app_content">
+							<input type="text" class="w100p" id="name_lbl" placeholder="이름을 입력해주세요" >
+						</div>
+					</li>
+					<li class="clear">
+					<label for="pwd_lbl" class="tit_lbl pilsoo_item">비밀번호</label>
+						<div class="app_content">
+							<input type="password" class="w100p" id="pwd_lbl" placeholder="비밀번호를 입력해주세요" >
+						</div>
+					</li>
+					<li class="clear">
+					<label for="pwd2_lbl" class="tit_lbl pilsoo_item">비밀번호 확인</label>
+						<div class="app_content">
+							<input type="password" class="w100p" id="pwd2_lbl" placeholder="다시 한번 입력해주세요" >
+						</div>
+					</li>
+					<li class="clear">
+						<label for="phone_lbl" class="tit_lbl pilsoo_item">연락처</label>
+						<div class="app_content">
+							<input type="tel" class="w100p" id="phone_lbl" placeholder="-없이 숫자만 입력하세요" >
+						</div>
+					</li>
+					<li class="clear"><span class="tit_lbl">성별</span>
+						<div class="app_content radio_area">
+							<input type="radio" class="css-radio" id="mmm_lbl" name="gender">
+							<label for="mmm_lbl">남</label> 
+							<input type="radio" class="css-radio" id="www_lbl" name="gender">
+							<label for="www_lbl">여</label>
+						</div>
+					</li>
+					<li class="clear"><span class="tit_lbl">개인정보 활용동의</span>
+						<div class="app_content checkbox_area">
+							<input type="checkbox" class="css-checkbox" id="agree_lbl" name="agree">
+							<label for="agree_lbl">동의함</label>
+						</div>
+					</li>
+				</ul>
+				<p class="btn_line">
+					<button type="button" class="btn_baseColor" id="btnSubmit">등록</button>
+				</p>
+			</fieldset>
+		</form>
+	</div>
+
+	<!-- footer -->
+	<footer>
+		<div class="top">
+			<div class="container">
+				<span>다운로드</span> <span>개인 정보 처리 방침</span> <span>저작권 지침 및 신고</span>
+				<span>이메일 무단 수집 거부</span>
+			</div>
+		</div>
+		<div class="container">
+			<strong> Home : Location Log : Tag Log : Media Log :
+				GuestBook : Admin : New Post </strong>
+			<div class="copyright">COPYRIGHT &copy; 투바투공식홈페이지's BLOG IS
+				POWERED BY NAVER / DESIGNED BY BIGHITS</div>
+		</div>
+	</footer>
+	
+	
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		  document.getElementById("btnSubmit").addEventListener("click", function () {
+	    	const name = document.getElementById("name_lbl").value.trim();
+	    	const email1 = document.getElementById("email_lbl").value.trim();
+	    	const email2 = document.querySelector(".email_area input[type='text']:nth-child(3)").value.trim();
+	    	const password = document.getElementById("pwd_lbl").value;
+	    	const passwordCheck = document.getElementById("pwd2_lbl").value;
+	    	const phone = document.getElementById("phone_lbl").value.trim();
+	    	const gender = document.querySelector('input[name="gender"]:checked');
+	    	const agree = document.getElementById("agree_lbl").checked;
+	    	
+	    	if (!name || !email1 || !email2 || !password || !passwordCheck || !phone) {
+	            alert("모든 필수 항목을 입력해주세요!");
+	            return;
+	          }
+	    	
+	    	if(password !== passwordCheck){
+	    		alert("비밀번호가 일치하지 않습니다!");
+	    		return;
+	    	}
+	    	
+	    	if (!agree) {
+	            alert("개인정보 활용에 동의해야 합니다.");
+	            return;
+	        }
+	    	
+	    	const userData = {
+	    			name,
+	    			email: email1 + "@" + email2,
+	    			password,
+	    			phone,
+	    			gender: gender ? gender.nextElementSibling.innerText : "선택 안 함",
+	    			agree: agree
+	    	 };
+	    	
+	    	 // 저장 (key: user)
+	        localStorage.setItem("user", JSON.stringify(userData));
+
+	        alert("회원가입 정보가 브라우저에 저장되었습니다!");
+	        alert(name + "님 환영합니다!");
+	        console.log("저장된 데이터:", userData);
+	        window.location.href = "../Main/index.html"; 
+	    })
+	})
+	</script>
+	
+</body>
+</html>

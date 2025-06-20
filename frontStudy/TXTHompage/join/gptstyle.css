@@ -1,0 +1,191 @@
+/* joinstyle.css */
+
+/* 헤더 스타일 */
+header {
+	background-color: #ffffff;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 컨테이너 가운데 정렬 */
+header .container {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: flex-end; /* 오른쪽 정렬 (원하면 center나 space-between도 가능) */
+	align-items: center;
+}
+
+/* 메뉴 스타일 */
+.sidemenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 20px;
+}
+
+/* 메뉴 항목 */
+.sidemenu li a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 8px 16px;
+	border-radius: 6px;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+/* hover 효과 */
+.sidemenu li a:hover {
+	background-color: #007bff;
+	color: white;
+}
+
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	background-color: #f9f9f9;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* FOOTER CSS */
+footer {
+	width: 100%;
+	height: 115px;
+	border-top: 1px solid #cbcbcb;
+	background: white;
+	font-size: 18px;
+}
+
+footer>.container {
+	height: auto;
+}
+
+footer .top {
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #cbcbcb;
+	margin-bottom: 15px;
+}
+
+footer .top span {
+	height: 100%;
+	line-height: 40px;
+	padding-right: 15px;
+	cursor: pointer;
+}
+
+footer .top span:hover {
+	font-weight: 700;
+}
+
+footer .copyright {
+	margin-top: 5px;
+}
+
+/* 회원가입 폼 */
+.bodytext_area {
+	padding: 40px 20px;
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	margin: 40px auto;
+	max-width: 700px;
+}
+
+.appForm legend {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.app_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.app_list li {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.tit_lbl {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.pilsoo_item::after {
+	content: " *";
+	color: red;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+select {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: 8px;
+}
+
+.email_area {
+	display: flex;
+	gap: 10px;
+	flex-wrap: nowrap;
+}
+
+.email_area .w160 {
+	width: calc(50% - 10px);
+}
+
+.select_common select {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.btn_line {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.btn_baseColor {
+	display: inline-block;
+	padding: 12px 24px;
+	background-color: #007bff;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: bold;
+	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+	transition: background-color 0.3s;
+}
+
+.btn_baseColor:hover {
+	background-color: #0056b3;
+}

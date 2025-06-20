@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html 연습 시작!</title>
+</head>
+<h1>HTML5 Wed program</h1>
+<h2>HTML5 Wed program</h2>
+<h3>HTML5 Wed program</h3>
+<h4>HTML5 Wed program</h4>
+<h5>HTML5 Wed program</h5>
+<h6>HTML5 Wed program</h6>
+<body>
+	<p>1. html은 웹 문서에 해당합니다.</p>
+	<p>2. css는 웹 디자인에 해당합니다.</p>
+	<p>3. js는 웹 이벤트 처리에 해당합니다.</p>
+	웹문서 구현(클라이언트,front-end)
+	<br> &nbsp;&nbsp;&nbsp;&nbsp;html : 문서의 구조를 작성
+	<br> &nbsp;&nbsp;&nbsp;&nbsp;css : 문서에 스타일 적용
+	<br> &nbsp;&nbsp;&nbsp;&nbsp;javascript : 문서를 동적으로 처리한다.
+	<pre>
+	웹 문서 구현(클라이언트,front-end)
+		html : 문서의 구조를 작성
+		css : 문서에 스타일 적용
+			JavaScript : 문서를 동적으로 처리한다.
+	</pre>
+
+	<p>
+		<b>b 태그는 굵은 글꼴 </b>
+	</p>
+	<p>
+		<i>i 태그는 기울임 꼴</i>
+	</p>
+	<p>
+		<em>em 태그는 강조로 표시</em>
+	</p>
+	<p>
+		<small>small 태그는 작은 글자를 표시</small>
+	</p>
+	<p>
+		<mark>mark 태그는 음영</mark>
+		으로 표시
+	</p>
+	<p>
+		<strong>strong 태그는 문자를 강력하게 강조</strong>
+	</p>
+	<p>
+		x<sub>2</sub>(아래첨자)와 Y<sup>2</sup>(위첨자) 표시
+	</p>
+	<p>
+		<del>del 태그는 취소선 표시</del>
+	</p>
+
+	<p>space : &nbsp; (공백)</p>
+	<p>less than : &lt;</p>
+	<p>greater than : &gt;</p>
+	<p>ampersand : &amp;</p>
+	<p>cent : &cent;</p>
+	<p>pound : &pound;</p>
+	<p>yen : &yen;</p>
+	<p>section : &sect;</p>
+	<p>copyright : &copy;</p>
+	<p>registered trademark : &reg;</p>
+
+	<div>12345</div>
+	<div>가나다라</div>
+	<div>ABCD</div>
+	<hr>
+
+	<p>12345</p>
+	<p>가나다라</p>
+	<p>ABCD</p>
+	<hr>
+
+	<span>12345</span>
+	<span>가나다라</span>
+	<span>ABCD</span>
+
+	<div style="border: 1px dotted red">
+		<h2>백두산 호랑이</h2>
+		<hr>
+		<br> 높은 산의 숲이 우거진 곳에서 사는 고양잇과의 포유류로 <span
+			style="color: red; font-weight: bold"> 한국 호랑이</span>라고도 한다. <br>
+		<br>
+	</div>
+
+	<img src="image/mouse.png">
+	<img src="image/mouse.png" width="150px" width="150px">
+
+	<hr>
+	<img src="image/mouse1.png" alt="미키 마우스">
+
+	<figure>
+		<img src="image/w3c.png" alt="w3c사이트" width="75">
+		<figcaption>[그림1] w3c 사이트</figcaption>
+	</figure>
+
+	<ul>
+		<li>Caffe latte</li>
+		<li>Americano</li>
+		<li>Espresso</li>
+	</ul>
+
+	<ol type="A">
+		<li>Caffe latte</li>
+		<li>Americano</li>
+		<li>Espresso</li>
+	</ol>
+
+	<ol start="50">
+		<li>Caffe latte</li>
+		<li>Americano</li>
+		<li>Espresso</li>
+	</ol>
+
+	<dl>
+		<dt>HTML</dt>
+		<dd>HyperText Markup Language</dd>
+		<dt>CSS</dt>
+		<dd>Cascading Style Sheets</dd>
+	</dl>
+
+	<a href="http://www.w3c.org" target="_top">W3C</a>
+	<br>
+	<a href="ex01_01.html" target="_blank">1페이지로 이동</a>
+	<br>
+	<br>
+
+	<a href="ex01_07.html" title="ex01_07.html 페이지로 이동"> <img
+		src="image/mouse.png">
+	</a>
+
+	<table border="1">
+		<caption>주소록</caption>
+		<tr>
+			<th>이름</th>
+			<th>주소</th>
+			<th>전화</th>
+		</tr>
+		<tr>
+			<th>박희진</th>
+			<th>경기</th>
+			<th>010-0000-0000</th>
+		</tr>
+		<tr>
+			<th>지선우</th>
+			<th>경기</th>
+			<th>010-0000-0000</th>
+		</tr>
+	</table>
+
+	<table border="1">
+		<tr>
+			<td colspan="4">지상파 방송국</td>
+		</tr>
+		<tr>
+			<td rowspan="2">채널</td>
+			<td>MBC</td>
+			<td>KBS</td>
+			<td>SBS</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>7</td>
+			<td>5</td>
+		</tr>
+	</table>
+
+	<table border="1">
+		<caption align="top">교재 가격표</caption>
+		<thead>
+			<tr>
+				<th>서적명</th>
+				<th>출판사</th>
+				<th>가격</th>
+				<th>기타</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td colspan="2">합계</td>
+				<td>107,000원</td>
+				<td>&nbsp;</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>HTML5</td>
+				<td>공갈닷컴</td>
+				<td>55,000원</td>
+				<td rowspan="3">&nbsp;</td>
+			</tr>
+			<tr>
+				<td>CSS3</td>
+				<td>남가람북스</td>
+				<td>32,000원</td>
+			</tr>
+			<tr>
+				<td>JavaScript</td>
+				<td>야메루 출판사</td>
+				<td>20,000원</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<ifram src="http://www.namgarambooks.co.kr">
+	<p>이 브라우저는 iframe을 지원하지 않습니다.</p>
+	</ifram>
+
+	<form action="ex01_01.html" method="get">
+		<table border="0">
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="id" size="20"></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="pwd" size="20"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="button" value="목록">
+					<input type = "submit" value = "전송">
+					<input type = "reset" value = "취소">
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	
+	<form>
+		<table border = "0">
+			<tr>
+				<td>성별<br>
+				<td>
+					<input type = "radio" name = "gender" value = "man" checked>남자
+					<input type = "radio" name = "gender" value = "woman" >여자
+				</td>
+			</tr>
+			<tr>
+				<td>취미</td>
+				<td>
+					<input type = "checkbox" name = "hobby" value = "climbing">등산
+					<input type = "checkbox" name = "hobby" value = "traveling">여행
+					<input type = "checkbox" name = "hobby" value = "fishing">낚시
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+	
+	<form>
+		<table border = "0">
+			<tr>
+				<td>컴퓨터 운영처제</td>
+				<td>
+					<select name = "OS" size = "3" multiple>
+						<option value = "windows">윈도우7</option>
+						<option value = "linux">리눅스</option>
+						<option value = "java">자바</option>
+						<option value = "oracle">오라클</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>기타사항</td>
+				<td>
+					<textarea rows = "7" cols = "30" name = "exam"></textarea>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	
+	<select>
+		<option>JAVA</option>
+		<option>JSP</option>
+		<option>ORACLE</option>
+		<option>HTML5</option>
+		<option>JQUERY</option>
+	</select>
+
+	<select>
+		<optgroup label = "html5">
+			<option>html</option>
+			<option>css</option>
+			<option>javascript</option>
+		</optgroup>
+		<optgroup label = "웹 표준">
+			<option>구조</option>
+			<option>동작</option>
+			<option>표현</option>
+		</optgroup>
+	</select>
+
+	<form>
+		<label>이름 <input type = "text" name = "name"></label><br><br>
+		
+		<label for = "myName">이름</label>
+		<input type = "text" name = "name" id = "myName">
+	</form>
+
+	
+	<form>
+		<fieldset>
+			<legend> 커피 사이즈는 어떤 걸로 할까요?</legend>
+			<p>
+				<input type = "radio" id = "size1" name = "size" value = "small">
+				<label for = "size1">small</label>
+			</p>
+			<p>
+				<input type = "radio" id = "size2" name = "size" value = "medium">
+				<label for = "size2">medium</label>
+			</p>
+			<p>
+				<input type = "radio" id = "size3" name = "size" value = "large">
+				<label for = "size3">large</label>
+			</p>
+		</fieldset>
+	</form>
+	
+	
+	<audio controls="controls">
+		<source src = "audio/ladymov.mp3" type = "audio/mp3">
+		<source src = "audio/ladymov.ogg" type = "audio/ogg">
+	</audio><br><br>
+	
+	<video width="640px" height = "360px" controls="controls">
+		<source src = "video/tiger.mp4" type = "video/mp4">
+		<source src = "video/tiger.webm" type = "video/webm">
+	</video>
+	
+
+	<form>
+		이메일 : <input type = "email" name = "email"><br>
+		url : <input type = "url" name = "url"><br>
+		전화번호 : <input type = "tel" name = "tel"><br>
+		색상 : <input type = "color" name = "color"><br>
+		월 : <input type = "month" name = "month"><br>
+		날짜 : <input type = "date" name = "date"><br>
+		주 : <input type = "week" name = "week"><br>
+		시간 : <input type = "time" name = "time"><br>
+		
+		지역시간 : <input type = "datetime-local" name = "datetime-local"><br>
+		숫자 : <input type = "number" name = "number" min = "1" max = "10" step = "2"><br>
+		범위 : <input type = "range" name = "range" min = "1" max = "10" step = "2"><br>
+		search : <input type = "search" name = "search"><br>
+		<input type = "submit" value = "제출">
+	</form>
+	
+	<form>
+		<fieldset>
+			<legend>개인 정보 입력</legend>
+			<table>
+				<tr>
+					<td><label for = "name">이름</label></td>
+					<td>
+						<input type = "text" name = "name" placeholder = "이름을 입력하시오"
+								required = "required" autofocus = "autofocus" id = "name">
+					</td>
+				</tr>
+				<tr>
+					<td><label for = "email" >이메일</label></td>
+					<td>
+						<input type = "email" name = "mail" placeholder = "이메일을 입력하시오" id = "email">
+					</td>
+				</tr>
+				<tr>
+					<td><label for = "phone">전화</label></td>
+					<td>
+						<input type = "text" name = "tel" pattern = "[0-1]{3}-[0-9]{4}-[0-9]{4}"
+							title = "###-####-####" placeholder = "전화번호를 입력하시오" id = "phone">
+					</td>
+				</tr>
+				<tr>
+					<td><label for = "photo">파일선택</label></td>
+					<td>
+						<input type = "file" accept = "image/jpg, image/gif" id = "photo">
+					</td>
+				</tr>
+			</table>
+			<input type = "submit" value = "제출">
+			<input type = "reset" value = "취소">
+		</fieldset>
+	</form>
+	
+	
+	<mark>Mickey Mouse</mark>
+	<details>
+		<summary>이미지 정보</summary>
+		<ul>
+			<li>파일 :  mouse.png</li>
+			<li>크기 : 36KB</li>
+			<li>위치 : D:\image</li>
+			<li><a href = "image/mouse.png" download>이미지 다운로드</a></li>
+		</ul>
+	</details><br>
+	
+	<meter value = "0.75">75%</meter><br><br>
+	<progress value = "30" max = "100">Progress : 10%</progress><br><br>
+	
+	<menu label = "커피종류">
+		<li style = "list-style : none;"><input type = "radio" name = "tea">아메리카노</li>
+		<li style = "list-style : none;"><input type = "radio" name = "tea">카페라떼</li>
+		<li style = "list-style : none;"><input type = "radio" name = "tea">콜드블루</li>
+	</menu>
+
+	<!--------------------------------------------------------------------------------------->
+	
+	<div id = "header"><h1>Web Publisher</h1></div>
+	<div id = "nav">
+		<ul>
+			<li><a href = "#">HTML5</a></li>
+			<li><a href = "#">CSS3</a></li>
+			<li><a href = "#">JAVASCRIPT</a></li>
+			<li><a href = "#">JQuery</a></li>
+		</ul>
+	</div>
+	<div id = "section">
+		<h2>html5이란?</h2>
+		<div id = "article">1. HTML 개요</div>
+		<div id = "article">2. 문서구조</div>
+	</div>
+	<div id = "aside">
+		<h3>보충설명</h3>
+		<p>
+		 HTML5,CSS3,JAVASCRIPT는 front-end 입니다.<br>
+		 php,jsp,asp는 back-end 입니다.
+		</p>
+	</div>
+	<div id = "footer">
+		<p>address and @copyright</p>
+	</div>
+
+	<!--------------------------------------------------------------------------------------->
+
+	<header><h1>Web Web Publisher</h1></header>
+	<nav>
+	<ul>
+		<li><a href = "#">HTML5</a></li>
+		<li><a href = "#">CSS3</a></li>
+		<li><a href = "#">JAVASCRIPT</a></li>
+		<li><a href = "#">JQuery</a></li>
+	</ul>
+	</nav>
+	<section>
+		<h2>html5이란?</h2>
+		<div id = "article">1. HTML 개요</div>
+		<div id = "article">2. 문서구조</div>
+	</section>
+	<aside>
+		<h3>보충설명</h3>
+		<p>
+		 HTML5,CSS3,JAVASCRIPT는 front-end 입니다.<br>
+		 php,jsp,asp는 back-end 입니다.
+	</aside>
+	<footer>
+		<p>address and @copyright</p>
+	</footer>
+	
+	<!-------------------------------------회원가입 화면 만들어보기---------------------------------------->
+	<head>
+		<meta charset = "UTF-8">
+		<title>Member Form</title>
+	</head>
+	
+	<body>
+		<form>
+			<fieldset>
+			<legend>회원가입</legend>
+			<table>
+				<tr>
+					<td><label for = "id">id</label></td>
+					<td><input id = "id" type = "text" placeholder = "아이디를 입력하시오" required = "required"></td>
+				</tr>
+				<tr>
+					<td><label for = "pw">pw</label></td>
+					<td><input id = "id" type = "password" placeholder = "비밀번호를 입력하시오"></td>
+				</tr>
+				<tr>
+					<td><label for = "repw">pw 재확인</label></td>
+					<td><input id ="repw" type = "password" placeholder = "비밀번호를 재입력하시오" ></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td><label>성별</label></td>
+					<td>
+						<input type = "radio" value = "man">남자
+						<input type = "radio" value = "woman">여자
+					</td>
+				</tr>
+				<tr>
+					<td><label>생일</label></td>
+					<td>
+						<input type = "date" name = "date">
+					</td>
+				</tr>
+				<tr>
+					<td colspan = "2">
+						<input type = "email" name = "email" size = "35" placeholder = "본인확인(이메일)">
+					</td>
+				</tr>
+				<tr>
+					<td colspan = "2">
+					<select>
+						<option>+82</option>
+					</select>
+						<input type = "text" id = "phone" size = "23" >
+						<input id = "year" type = "button" value = "인증" >
+					</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan = "2">
+						<input type = "text" id = "certification" size = "30" placeholder="인증번호">
+						<input id = "year" type = "button" value = "확인" >
+					</td>
+				</tr>
+			</table>
+			</fieldset>
+		</form>
+	
+	<!-------------------------------------로그인 화면 만들어보기---------------------------------------->
+	<head>
+		<meta charset = "UTF-8">
+		<title>Login Form</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>로그인 화면</legend>
+				<table>
+					<tr>
+						<td colspan = "2">
+							<input id = "name" type = "text" name = "id" placeholder="아이디" required="required" autofocus="autofocus">
+							<input type = "button" value = "로그인">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input id = "name" type = "password" name = "pw" placeholder="비밀번호" required="required">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type = "checkbox">로그인 상태유지<br>
+							<a href = "member.html">회원가입</a>&nbsp;&nbsp;&nbsp;
+							<a href="">아이디/비밀번호 찾기</a>
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+		
+		
+</body>
+</html>

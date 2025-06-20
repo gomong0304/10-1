@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 삽입 테스트2</title>
+
+	<!-- ex31 -->
+	<script type="text/javascript">
+	document.write("팝업창 있어서 주석처리해둠");
+		/* window.onload=function(){
+			var win=window.open('win1.html','','width=300,height=200');
+			win.moveTo(100,100);
+			
+			window.setInterval(function(){
+				win.moveBy(20,20);
+			},1000);
+			
+			window.setTimeout(function(){
+				win.close();
+			},5000);
+		}*/
+	</script>
+	<hr>
+
+	<!-- ex32 -->
+	<script type="text/javascript">
+	document.write("계속 새로고침되서 주석처리해둠");
+		/* var t=new Date();
+		document.write(t.getHours()+":"+t.getMinutes()+":"+t.getSeconds());
+		setInterval(function(){
+			location.reload();
+		},1000); */
+	</script>
+	<hr>
+	
+	<!-- ex32 -->
+	<script type="text/javascript">
+		function process() {
+			var name=frm.name.value;
+			var phone=frm.phone.value;
+			location.href="js Ex.html?"+name+"&"+phone;
+		}
+	</script>
+	
+	<body>
+		<form name="frm">
+			사용자명 : <input type="text" name="name">
+			전화번호 : <input type="text" name="phone">
+			<input type="button" onclick="process()" value="보내기">
+		</form>
+	</body>
+	<hr>
+	
+	<!-- ex33 -->
+	<script type="text/javascript">
+		document.write("주소: "+location.href+"<br>");
+		document.write("프로토콜: "+location.protocol+"<br>");
+		document.write("호스트: "+location.host+"<br>");
+		document.write("파일 경로명: "+location.pathname+"<br>");
+		document.write("호스트: "+location.search+"<br>");
+	</script>
+	<hr>
+	
+	
+	<!-- ex34-->
+	<script type="text/javascript">
+		document.write("브라우저 명: "+ navigator.appName+"<br>");
+		document.write("코드명: "+ navigator.appCodeName+"<br>");
+		document.write("운영체제: "+ navigator.platform+"<br>");
+		document.write("사용 언어: "+ navigator.language+"<br>");
+		document.write("사용 엔진: "+ navigator.product);
+	</script>
+	<hr>
+	
+	
+	<!-- ex35-->
+	<script type="text/javascript">
+		document.write("방문한 페이지 수:"+ history.length);
+	</script>
+	
+	<body>
+		<h3>History 객체 연습(첫 번째 페이지)</h3>
+		<a href="test1.html">다음 페이지</a><br><br>
+		<input type="button" value="이전으로" onclick="javascript:history.back()">
+		<input type="button" value="다음으로" onclick="javascript:history.forward()">
+		<input type="button" value="처음으로" onclick="javascript:history.go(-2)">
+	</body>
+	<hr>
+	
+	<!-- ex35-1-->
+	<!-- <script type="text/javascript">
+		document.write("방문한 페이지 수:"+ history.length);
+	</script>
+	
+	<body>
+		<h3>History 객체 연습(두 번째 페이지)</h3>
+		<a href="test2.html">다음 페이지</a><br><br>
+		<input type="button" value="이전으로" onclick="javascript:history.back()">
+		<input type="button" value="다음으로" onclick="javascript:history.forward()">
+		<input type="button" value="처음으로" onclick="javascript:history.go(-2)">
+	</body>
+	<hr> -->
+	
+	<!-- ex35-2-->
+	<!-- <script type="text/javascript">
+		document.write("방문한 페이지 수:"+ history.length);
+	</script>
+	
+	<body>
+		<h3>History 객체 연습(세 번째 페이지)</h3>
+		<input type="button" value="이전으로" onclick="javascript:history.back()">
+		<input type="button" value="다음으로" onclick="javascript:history.forward()">
+		<input type="button" value="처음으로" onclick="javascript:history.go(-2)">
+	</body>
+	<hr> -->
+	
+	
+	<!-- ex36-->
+	<script type="text/javascript">
+		document.write("전체 화면에서 사용 가능한 너비:" + screen.availWidth+"<br>");
+		document.write("전체 화면에서 사용 가능한 높이:" + screen.availHeight+"<br>");
+		document.write("전체 화면의 너비:" + screen.width+"<br>");
+		document.write("전체 화면의 높이:" + screen.height+"<br>");
+		document.write("색상 팔레트 비트 수:" + screen.colorDepth+"<br>");
+		document.write("한 픽셀당 비트 수:" + screen.pixelDepth+"<br>");
+	</script>
+	<hr>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</head>
+<body>
+
+</body>
+</html>

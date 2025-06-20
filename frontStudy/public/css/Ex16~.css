@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+/* ex16 */
+body>div{
+	position:relative;
+	text-align: center;
+	overflow: hidden;
+}
+.box{width: 70px; height: 70px; float: left; color:black; position: relative; background-color: white;}
+.box:nth-child(1){left:10px; border-style: none;}
+.box:nth-child(2){left:20px; border-style: solid;}
+.box:nth-child(3){left:30px; border-style: dotted;}
+.box:nth-child(4){left:40px; border-style: dashed;}
+.box:nth-child(5){left:50px; border-style: double;}
+.box:nth-child(6){left:60px; border-style: groove;}		
+
+/* ex17 */
+ol{
+	list-style-type: upper-alpha;
+	list-style-position: inside;}
+ul{
+	list-style-image: url("image/icon.png");}
+	
+
+/* ex18 */
+div{
+width: 300px;
+height: 300px;
+border: 1px solid black;
+background-color: #d5d5d5;
+background-image: url("image/cat.png");
+background-repeat: no-repeat;
+background-position: bottom center;
+}
+
+
+/* ex19 */
+table{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+	text-align: center;
+}
+table>caption{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+table td,table th{
+	padding: 8px 5px;
+	border: 1px solid #ccc;
+}
+.blue{
+	color: white;
+	background: #43cbff;
+}
+.green{
+	color:white;
+	background: #81d733;
+}
+.yellow{
+	background: yellow;
+}
+.orange{
+	background: orange;
+}
+.red{
+	color:white;
+	background: red;
+}
+
+
+/* ex20 */
+span{
+	border:2px solid teal;
+}
+span.pad{
+	padding-top: 50px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	padding-left: 20px;
+}
+
+
+/* ex21 */
+div{
+	background-color: darkgray;
+	color: white;
+	width: 450px;
+	padding: 30px;
+	border: 20px solid teal;
+	margin: 50px;
+}
+

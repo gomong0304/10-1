@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>소개영상</title>
+<link rel="stylesheet" href="style.css">
+	<script>
+		var v;
+		function btnPlay() {
+			v=document.getElementById("vdo");
+			v.play();
+		}
+		function btnPause() {
+			v.pause();
+		}
+		function btnStop() {
+			v.pause();
+			v.currentTime=0;
+		}
+		function btnPrev() {
+			v.currentTime -= 5;
+		}
+		function btnNext() {
+			v.currentTime += 5;
+		}
+		function btnRate1() {
+			v.playbackRate = 1;
+		}
+		function btnRate2() {
+			v.playbackRate = 2;
+		}
+		function btnSizeNormal() {
+			v.width = 500;
+		}
+		function btnSizeLarge() {
+			v.width = 1000;
+		}
+		function btnSizesmall() {
+			v.width = 250;
+		}
+	</script>
+</head>
+
+<body>
+	<div>
+		<h3>TXT 소개영상</h3>
+		<video width="500" id="vdo" controls="controls">
+			<source src="../video/txt.mp4" type="video/mp4"></source>
+		</video>
+		<br>
+		<button onclick="btnPlay()">▶ 재생</button>
+		<button onclick="btnPause()">⏸ 일시정지</button>
+		<button onclick="btnStop()">⏹ 정지</button>
+		<button onclick="btnPrev()">⏪ 5초 전</button>
+		<button onclick="btnNext()">⏩ 5초 후</button>
+		<button onclick="btnRate1()">1배속</button>
+		<button onclick="btnRate2()">2배속</button>
+		<button onclick="btnSizeNormal()">🖥 일반화면</button>
+		<button onclick="btnSizeLarge()">🔍 2배화면</button>
+		<button onclick="btnSizesmall()">🔎 ½배화면</button>
+	</div>
+
+</body>
+</html>

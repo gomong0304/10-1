@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* css 스타일 외부 저장 */
+
+h1{ font-family:"Comic Sans MS"; }	/* ex1~2 */
+
+#t1{ font-weight : bold; }	/* ex3 */
+
+.t2{ font-weight : bold; }	/* ex4~5 */
+
+a[target=_blank]{ color : green; }
+[class^="first"] { color : red; }
+input[type=text]{ width : 100px; margin-bottom : 10px; background-color : #d5d5d5; }
+input[type=button]{ color : white; font-weight : bold; background-color : #000; }  /* ex6 */
+
+h2:before{
+	content:"☆";
+	color:blue;
+}
+h2:after{
+	content:"★";
+	color:blue;
+}
+p:first-letter{
+	font-size:25px;
+	background-color:gray;
+	color:white;
+	font-weight:bold;
+}	/* ex7 */
+
+a:link{color:blue;}
+a:visited{color:red;}
+a:hover{color:green;}
+a:active{color:yellow;}		/* ex8 */
+
+.header h3{ color:red;}
+.footer>h3{color:blue;}		/* ex9 */
+
+h4+h5{color:red;}
+h4~h5{background-color: yellow;}
+h4~h5:hover{color:blue;}	/* ex10 */
+
+hr{background-color:gray;}
+ol#coun li{color:black;}
+ol#coun li:hover{color:orange; font-weight:bold;}		/* ex11 */
+
+h1,div,p{
+	color:green;
+	font-size:25px;
+	font-weight:bold;
+	font-family:"나눔고딕";
+}		/* ex12, 하면서 위에꺼도 다 바뀜ㅋㅋ; */
+
+p{font-size:25px; font-weight:bold; color:#8041D9;}
+.t1{font-size:15px; font-family:휴먼옛체,맑은고딕; color:rgb(255,0,221);}
+#t2{font-size:35px; font-family: "Times New Roman","Comic Sans MS"; color:gray;}	/* ex13 */
+
+.fs{
+	font-size:25px;
+	line-height:50px;
+}
+#f1{font-variant: small-caps;}
+#f2{font-style: italic;}
+#f3{font-family: "Comic Sans MS";}
+#f4{font-weight: bold;}		/* ex14 */
+
+
+div{height: 30px; border: 1px dotted #d5d5d5;}
+div.a{text-transform: capitalize;}
+div.b{text-align: right;}
+div.c{text-decoration: underline overline; 
+	  text-decoration-color:red;
+	  text-decoration-style: dotted; 
+}
+div.d{text-indent: 50px;}
+div.e{letter-spacing: 10px;}
+div.f{word-spacing: 30px;}	/* ex15 */
